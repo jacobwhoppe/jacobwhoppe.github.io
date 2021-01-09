@@ -2,33 +2,62 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Morgan's Website</title>
+        <title>Hope Community Church</title>
         <style>
-            body {
-                background: rgb(115, 115, 245);
+            .dropbtn {
+                background: green;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
             }
             
-            h1 {
-                background: rgb(35, 190, 247);
-                color: rgb(173, 19, 93);
+            .dropdown {
+                position: relative;
+                display: inline-block;
             }
             
-            ol {
-                font-weight: bold;
-                font-size: 26px;
-                font-family:cursive;
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background: grey;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            .dropdown-content a:hover {
+                background: rgb(186, 91, 186);
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown:hover .dropbtn {
+                background: rgb(87, 120, 91);
             }
         </style>
     </head>
     <body>
-        <h1>Top 5 Things I LOVE about MORGAN</h1>
-        <ol>
-            <li>She is amazing and sweet!</li>
-             <li>She is kind and loving!</li>
-             <li>She is pretty!</li>
-             <li>She is good at reading books!</li>
-             <li>She has a nice boyfriend!  (:  </li>
-        </ol>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Heart_coraz%C3%B3n.svg" alt="nice picture of a heart" width="314">
+            <p id="logo">O</p>
+            <h1>hope <br> community <br> church</h1>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#About">About</a>
+                    <a href="#Contact">Contact</a>
+                    <a href="#Sermons">Sermons</a>
+                    <a href="#Groups">Groups</a>
+                    <a href="#Donate">Donate</a>
+                </div>
+            </div>
     </body>
 </html>
